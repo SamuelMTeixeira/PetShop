@@ -11,10 +11,10 @@ const Cabecalho = () => {
             </div>
 
             <div className='cabecalho-container'>
-                <a href='#' className='flex flex--centro'>
+                <Link to='#' className='flex flex--centro'>
                     <img src={imagem} className='cabecalho__logo' alt='icone' />
                     <h1 className='cabecalho__titulo'>PetShop</h1>
-                </a>
+                </Link>
             </div>
 
             <nav className='menu-cabecalho'>

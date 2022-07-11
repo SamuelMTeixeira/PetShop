@@ -3,6 +3,7 @@ import './assets/css/base/base.css'
 
 import Home from './paginas/Home'
 import Sobre from './paginas/Sobre'
+import Post from './paginas/Post'
 import PaginaNotFound from './paginas/PaginaNotFound'
 
 import Cabecalho from './components/Cabecalho'
@@ -19,6 +20,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
 
         <Route path="sobre" element={<Sobre />} />
+
+        <Route path='posts/:id' element={<Post />} />
 
         <Route path='*' element={<PaginaNotFound />} />
       </Routes>
