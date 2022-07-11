@@ -4,6 +4,7 @@ import './assets/css/base/base.css'
 import Home from './paginas/Home'
 import Sobre from './paginas/Sobre'
 import Post from './paginas/Post'
+import Categoria from './paginas/Categoria'
 import PaginaNotFound from './paginas/PaginaNotFound'
 
 import Cabecalho from './components/Cabecalho'
@@ -20,6 +21,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
 
         <Route path="sobre" element={<Sobre />} />
+
+        <Route path="categoria/:id/*" element={<Categoria />} />
 
         <Route path='posts/:id' element={<Post />} />
 
